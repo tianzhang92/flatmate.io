@@ -8,7 +8,6 @@ var express = require('express'),
     LinkedInStrategy = require('passport-linkedin-oauth2').Strategy
 
     fs = require('fs');
-    var mongoose    = require('mongoose');
     var dbUrl       = "mongodb://flatmate:flatmate@ds061974.mongolab.com:61974/flatmate";
     //var dbUrl = "mongodb://localhost:27017/flatmate1";
 
