@@ -1,10 +1,10 @@
 # flatmate.io
 Cloud project for Team J - Roommate Finder
 
-Somdeep Dey
-Matthew Mallett
-Shangshang Chen
-Tian Zhang
+Somdeep Dey (sd2988)
+Matthew Mallett (mm4673)
+Shangshang Chen (sc3399)
+Tian Zhang (tz2237)
 
 # architecture
 MEAN Stack
@@ -26,9 +26,6 @@ You should have node.js installed locally
 
 npm install
 
-node app.js
+node server.js
 
 # deploying to aws
-
-
-cf push flatmateio
