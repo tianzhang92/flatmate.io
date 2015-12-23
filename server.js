@@ -9,7 +9,7 @@ var express = require('express'),
 
     fs = require('fs');
     var mongoose = require('mongoose');
-    var dbUrl       = "mongodb://flatmate:flatmate@ds061974.mongolab.com:61974/flatmate";
+    var dbUrl       = "";
     //var dbUrl = "mongodb://localhost:27017/flatmate1";
 
     var db          = mongoose.connect(dbUrl);
@@ -37,9 +37,9 @@ passport.deserializeUser(function(obj, done) {
 //   credentials (in this case, an accessToken, refreshToken, and Facebook
 //   profile), and invoke a callback with a user object.
 passport.use(new FacebookStrategy({
-    clientID: '188629254815291',
-    clientSecret: '3c3c7744ede569d79bfa772f725b325c',
-    callbackURL: "http://ec2-54-164-222-209.compute-1.amazonaws.com:9000/auth/facebook/callback",
+    clientID: '',
+    clientSecret: '',
+    callbackURL: "",
     profileFields: ['id', 'displayName', 'emails', 'gender', 'birthday', 'locale',
     'location', 'hometown', 'likes', 'education', 'work', 'bio','friends','posts'],
   },
