@@ -1,0 +1,210 @@
+input.ng-dirty.ng-invalid, textarea.ng-dirty.ng-invalid{
+    border: 1px red solid !important;
+}
+
+.header{
+  background-color: #43BF57;
+}
+
+.header .left a{
+  color: white;
+  display: inline-block;
+  padding-top: 10px;
+}
+.header .left a:hover, .header .left a:focus, .header .left a:active{
+  text-decoration: none;
+  color: white;
+}
+.header .left a h1{
+  margin: 0px;
+}
+.header .left a span{
+  color: black;
+}
+
+.header .right{
+  text-align: right;
+}
+.header .right a{
+  color: white;
+  font-size: 1.1em;
+  padding: 18px 30px;
+  display: inline-block;
+  transition: background-color .2s linear;
+}
+.header .right a:hover, .header .right a:focus, .header .right a:active{
+  background-color: #2D7F3A;
+  text-decoration: none;
+}
+
+.content{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.profile .left img{
+  width: 100%;
+  border-radius: 10px;
+}
+.profile .left h2{
+  margin-top: 0px;
+  margin-bottom: 4px;
+}
+
+.profile .mid{
+  padding-top: 8px;
+}
+
+.profile .mid p{
+  margin: 0px;
+}
+
+.profile .mid input[type=text],.profile .mid input[type=number]{
+  padding: 5px;
+  height: 30px;
+  border: 1px #b1bfb3 solid;
+  margin-bottom: 5px;
+}
+.profile .mid input[type=text]:hover, .profile .mid input[type=text]:focus,
+.profile .mid input[type=number]:hover, .profile .mid input[type=number]:focus{
+  border:1px #43BF57 solid;
+  color: #43BF57;
+  outline: 0px;
+}
+
+.profile .mid textarea{
+  width: 100%;
+  resize: none;
+  height:150px;
+  padding: 5px;
+  border: 1px #B1BFB3 solid;
+}
+.profile .mid textarea:focus, .profile .mid textarea:active, .profile .mid textarea:hover{
+  outline: 0px;
+  border:1px #43BF57 solid;
+  color: #43BF57;
+}
+
+.profile .mid h3 {
+  margin-top: 0px;
+  font-weight: 200;
+  color: #43BF57;
+}
+
+.profile .mid input[type=checkbox]{
+  margin-right: 10px;
+}
+.profile .mid label{
+  font-weight: normal;
+  width: 85%;
+}
+.profile .mid label:hover{
+  color: #43BF57;
+}
+
+.profile .mid .col-md-6{
+  margin-top:20px;
+}
+
+.profile .mid button{
+  margin-top: 20px;
+  font-size: normal;
+}
+
+.matches{
+
+}
+
+.matches .match{
+  /*transition: background-color .2s linear, color .2s linear;*/
+  margin-bottom: 20px;
+  border: 2px white solid;
+}
+.matches .match:hover{
+  border-color: #43BF57;
+  cursor: pointer;
+}
+
+.matches .match img{
+  width: 30%;
+  vertical-align: top;
+}
+
+.matches .match .contents{
+  display: inline-block;
+  padding-left: 20px;
+  max-width: 65%;
+}
+
+.matches .match .contents h3{
+  margin-top: 0px;
+  color: #43BF57;
+  display: inline-block;
+}
+/*.matches .match:hover h3{
+  color: white;
+}*/
+
+.matches .match p.location{
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.matches .match .contents p{
+  margin-bottom: 0px;
+}
+/*.matches .match:hover p{
+  color: white;
+}*/
+
+.messages .user{
+
+}
+.messages .user:hover{
+  cursor: pointer;
+  border-right: 3px #2D7F3A solid;
+}
+.messages .user.active{
+  border-right: 3px #2D7F3A solid;
+  color: #43BF57;
+}
+.messages .user img{
+  height: 75px;
+}
+.messages .user p{
+  display: inline;
+  margin-left: 20px;
+  font-size: 1.25em;
+}
+
+.messages .message{
+
+}
+.messages .message.mine{
+  text-align: right;
+  color: #43BF57;
+}
+
+.messages textarea{
+  margin-top: 20px;
+  margin-bottom: 5px;
+  height: 80px;
+}
+
+.messages form{
+  text-align: right;
+}
+
+.messages a.profile{
+  padding: 12px 20px;
+  font-size: 1.25em;
+  background-color: inherit;
+  border: 1px #43BF57 solid;
+  color: #43BF57;
+  transition: background .2s linear, color .2s linear;
+}
+.messages a.profile:hover{
+  background-color: #43BF57;
+  color: white;
+  text-decoration: none;
+}

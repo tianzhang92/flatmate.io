@@ -1,0 +1,58 @@
+<div class="profile row">
+  <div class="col-md-3 left">
+    <h2>{{userCtrl.profile.username}}</h2>
+    <img ng-src="http://graph.facebook.com/{{userCtrl.id}}/picture?type=large"></img>
+  </div>
+  <div class="col-md-6 mid">
+
+    <h3>About</h3>
+    <p>{{userCtrl.profile.location}}</p>
+    <p>${{userCtrl.profile.priceLow}} to ${{userCtrl.profile.priceHigh}}</p>
+    <p>{{userCtrl.profile.about}}</p>
+
+    <h3>Looking For</h3>
+    <p>{{userCtrl.profile.lookingFor}}</p>
+
+    <ul>
+      <li ng-repeat="entry in userCtrl.profile.lookingForList">{{entry}}</li>
+    </ul>
+
+    <button type="button" data-toggle="modal" data-target="#myModal">Message</button>
+
+  </div>
+
+  <div class="col-md-3 right"
+       style="overflow:scroll;">
+       <h3>Recommended for you and {{userCtrl.profile.name}}</h3>
+       <div ng-repeat="room in userCtrl.profile.rooms">
+            <img ng-src={{room.picLink}}></img>
+            <p>{{room.description}}</p>
+            <a href={{room.link}}>link</a>
+            <hr>
+       </div>
+  </div>
+
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <form name="sendMessage" ng-submit="userCtrl.sendMessage()" novalidate>
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">New message to {{userCtrl.profile.username}}</h4>
+        </div>
+        <div class="modal-body">
+          <textarea ng-model="userCtrl.message" placeholder="Message.." required>
+          </textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal">Cancel</button>
+          <button type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

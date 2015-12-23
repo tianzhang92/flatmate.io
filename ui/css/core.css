@@ -1,0 +1,56 @@
+button{
+  padding: 10px 20px;
+  font-size: 1.25em;
+  background-color: inherit;
+  border: 1px #43BF57 solid;
+  color: #43BF57;
+  transition: background .2s linear, color .2s linear;
+}
+button:hover, button:focus, button:active{
+  background-color: #43BF57;
+  color: white;
+  outline: none;
+}
+
+button.facebook{
+  border-color: #3b5998;
+  color: #3b5998;
+}
+button.facebook:hover, button.facebook:focus, button.facebook:active{
+  background-color: #3b5998;
+  color: white;
+}
+
+textarea{
+  width: 100%;
+  resize: none;
+  height:150px;
+  padding: 5px;
+  border: 1px #B1BFB3 solid;
+}
+textarea:focus, textarea:active, textarea:hover{
+  outline: 0px;
+  border:1px #43BF57 solid;
+  color: #43BF57;
+}
+
+.modal-dialog{
+  margin-top: 150px;
+}
+
+.modal-content{
+  border-radius: 0px;
+  border: 0px;
+}
+.modal-header{
+  border: 0px;
+}
+.modal-header button:hover{
+  background-color: inherit;
+}
+.modal-title{
+  color: #43BF57;
+}
+.modal-footer{
+  border: 0px;
+}
