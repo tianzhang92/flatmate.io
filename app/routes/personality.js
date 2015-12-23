@@ -144,7 +144,10 @@ var repeater = function(res,result,myData,i){
 //   }
 // });
 
-// compare("hi","hello", function(err, data){
-// });
+ compare("hi","hello", function(err, data){
+   if (!err){
+     console.log(data);
+   }
+ });
 
 module.exports = repeater;
