@@ -13,7 +13,7 @@ MongoDB (hosted by MongoLab on AWS)
 Express.js
 Angular.js
 Node.js
-Hosted on IBM Bluemix PaaS
+Hosted on IBM Bluemix PaaS / AWS EC2
 
 Uses Facebook OAuth as the primary log in. We request access to various Facebook account details including likes, work, education.
 
@@ -28,4 +28,4 @@ npm install
 
 node server.js
 
-# deploying to aws
+# deploying to IBM Bluemix PaaS / AWS EC2
