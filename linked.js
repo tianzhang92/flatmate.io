@@ -11,8 +11,7 @@ var express = require('express'),
     LinkedInStrategy = require('passport-linkedin-oauth2').Strategy
     fs = require('fs');
     var mongoose    = require('mongoose');
-    var dbUrl       = "mongodb://flatmate:flatmate@ds061974.mongolab.com:61974/flatmate";
-    //var dbUrl = "mongodb://localhost:27017/flatmate1";
+    var dbUrl       = "";
 
     var db          = mongoose.connect(dbUrl);
 
@@ -38,9 +37,9 @@ var express = require('express'),
 
 //Passport linked in Strategy
     passport.use(new LinkedInStrategy({
-        clientID: "77k71lq8q0x5i1",
-        clientSecret: "soUiwkC5METRPjR4",
-        callbackURL: "http://ec2-54-164-222-209.compute-1.amazonaws.com:9000/callback",
+        clientID: "",
+        clientSecret: "",
+        callbackURL: "",
         state: true
       },
       function(token, tokenSecret, profile, done) {
