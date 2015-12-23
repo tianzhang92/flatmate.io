@@ -13,7 +13,8 @@ var express = require('express'),
 
     var db          = mongoose.connect(dbUrl);
     var mongoose = require('mongoose');
-    var User = require('/home/bitnami/stack/apps/flatmate.io/app/models/User');
+    var User = require('./app/models/User');
+    // var User = require('/home/bitnami/stack/apps/flatmate.io/app/models/User');
 // Passport session setup.
 //   To support persistent login sessions, Passport needs to be able to
 //   serialize users into and deserialize users out of the session.  Typically,
