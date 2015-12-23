@@ -37,10 +37,8 @@ passport.deserializeUser(function(obj, done) {
 //   credentials (in this case, an accessToken, refreshToken, and Facebook
 //   profile), and invoke a callback with a user object.
 passport.use(new FacebookStrategy({
-    // clientID: '188629254815291',
-    // clientSecret: '3c3c7744ede569d79bfa772f725b325c',
-    clientID: '787282261383988',
-    clientSecret: '63ccad5dfc68d8c3345a0a98e14f92ef',
+    clientID: '188629254815291',
+    clientSecret: '3c3c7744ede569d79bfa772f725b325c',
     callbackURL: "http://ec2-54-164-222-209.compute-1.amazonaws.com:9000/auth/facebook/callback",
     profileFields: ['id', 'displayName', 'emails', 'gender', 'birthday', 'locale',
     'location', 'hometown', 'likes', 'education', 'work', 'bio','friends','posts'],
