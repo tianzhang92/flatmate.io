@@ -40,7 +40,7 @@ var express = require('express'),
     passport.use(new LinkedInStrategy({
         clientID: "77k71lq8q0x5i1",
         clientSecret: "soUiwkC5METRPjR4",
-        callbackURL: "http://localhost:9001/auth/linkedin/callback",
+        callbackURL: "http://ec2-54-164-222-209.compute-1.amazonaws.com:9000/callback",
         state: true
       },
       function(token, tokenSecret, profile, done) {
