@@ -1,6 +1,6 @@
 
-var User = require('./../models/User');
-var Message = require('./../models/Message');
+var User = require('/home/bitnami/stack/apps/flatmate.io/app/models/User');
+var Message = require('/home/bitnami/stack/apps/flatmate.io/app/models/Message');
 var craigslist = require('./craigslist');
 var request = require('request');
 var request=require('request');
