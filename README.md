@@ -29,3 +29,6 @@ npm install
 node server.js
 
 # deploying to IBM Bluemix PaaS / AWS EC2
+
+# See our video
+https://youtu.be/A1Xu-QYvecg
