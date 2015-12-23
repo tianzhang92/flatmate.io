@@ -39,7 +39,7 @@ passport.deserializeUser(function(obj, done) {
 passport.use(new FacebookStrategy({
     clientID: '188629254815291',
     clientSecret: '3c3c7744ede569d79bfa772f725b325c',
-    callbackURL: "http://localhost:9000/auth/facebook/callback",
+    callbackURL: "http://ec2-54-164-222-209.compute-1.amazonaws.com:9000/auth/facebook/callback",
     profileFields: ['id', 'displayName', 'emails', 'gender', 'birthday', 'locale',
     'location', 'hometown', 'likes', 'education', 'work', 'bio','friends','posts'],
   },
@@ -140,7 +140,7 @@ passport.use(new FacebookStrategy({
     passport.use(new LinkedInStrategy({
         clientID: "77k71lq8q0x5i1",
         clientSecret: "soUiwkC5METRPjR4",
-        callbackURL: "http://localhost:9000/connect/linkedin/callback",
+        callbackURL: "http://ec2-54-164-222-209.compute-1.amazonaws.com:9000/connect/linkedin/callback",
         state: true
       },
       function(token, tokenSecret, profile, done) {
