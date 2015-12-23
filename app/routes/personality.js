@@ -3,7 +3,7 @@ var request = require('request');
 var getPersonality = function(text, callback){
   text = text.replace(/,/g,"%2c").replace(/'/g,"%27").replace(/ /g,"+");
   //console.log(text);
-  var readkey = "6zSOpHgVLldy";
+  var readkey = "";
   var typeEI = "myers-briggs-attitude"; //extraversion vs. introversion
   var typeTF = "myers-briggs-judging-function"; // thinking vs. feeling
   var typeSN = "myers-briggs-perceiving-function"; //sensing vs. intuition
